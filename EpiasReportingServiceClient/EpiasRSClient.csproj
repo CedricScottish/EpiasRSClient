@@ -4,7 +4,30 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Gökhan AYDOĞDU</Authors>
+    <Company>Cedric</Company>
+    <Product>$(AssemblyName)</Product>
+    <Description>EXIST (EPIAS) Transparency Platform 2.0 Electricity Market Reports Web Services</Description>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://github.com/CedricScottish/EpiasRSClient</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/CedricScottish/EpiasRSClient</RepositoryUrl>
+    <PackageTags>epias, electricity, report, dam, mcp, smp</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageId>Cedric.$(AssemblyName)</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
